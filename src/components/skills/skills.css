@@ -10,7 +10,7 @@
 .icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 1ch;
+  row-gap: 2rem;
   column-gap: 3rem;
 }
 
