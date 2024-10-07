@@ -2,37 +2,51 @@
   font-family: "Rubik", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  margin-top: 20px;
   font-size: larger;
+  letter-spacing: 2px;
 }
 
 .page1 {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .scrollDown {
-  margin-top: 70px;
   animation: MoveUpDown 1.5s linear infinite;
+  margin-bottom: 20px;
 }
 
 .scrollDown svg {
-  filter: drop-shadow(0 0 5px #dfdbdb) drop-shadow(0 0 10px #e1dede) drop-shadow(0 0 20px #dea0a0);
+  filter: drop-shadow(0 0 5px #dfdbdb) drop-shadow(0 0 10px #e1dede)
+    drop-shadow(0 0 20px #dea0a0);
 }
 
 .scrollDown:hover svg {
-  fill: #ff8888; 
-  filter: drop-shadow(0 0 5px #ff8888) drop-shadow(0 0 10px #ff8888) drop-shadow(0 0 20px #ff8888);
+  fill: #ff8888;
+  filter: drop-shadow(0 0 5px #ff8888) drop-shadow(0 0 10px #ff8888)
+    drop-shadow(0 0 20px #ff8888);
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
   }
+}
+
+.page2 {
+  scroll-margin: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }

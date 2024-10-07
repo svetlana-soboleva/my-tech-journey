@@ -1,6 +1,7 @@
 .links__block {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 20px;
   justify-content: center;
   margin-top: 40px;

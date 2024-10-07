@@ -1,0 +1,129 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1ch;
+  column-gap: 3rem;
+}
+
+.icon {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.647);
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.icon:hover .icon-text {
+  opacity: 1;
+  bottom: 40px;
+}
+
+.icon.nextjs,
+.express {
+  color: rgba(255, 255, 255, 0.8);
+  filter: drop-shadow(0 0 20px #dfdbdb) drop-shadow(0 0 30px #e1dede)
+    drop-shadow(0 0 40px #af9e9e);
+}
+
+.icon.javascript {
+  color: rgba(247, 223, 30, 0.8);
+  filter: drop-shadow(0 0 20px rgba(247, 223, 30, 0.5))
+    drop-shadow(0 0 30px rgba(247, 223, 30, 0.5));
+}
+
+.icon.typescript {
+  color: rgba(0, 122, 204, 0.8);
+  filter: drop-shadow(0 0 20px rgba(0, 122, 204, 0.5))
+    drop-shadow(0 0 30px rgba(0, 122, 204, 0.5));
+}
+
+.icon.tailwind {
+  color: rgba(56, 178, 172, 0.8);
+  filter: drop-shadow(0 0 20px rgba(56, 178, 172, 0.5))
+    drop-shadow(0 0 30px rgba(56, 178, 172, 0.5));
+}
+
+.icon.html {
+  color: rgba(228, 77, 38, 0.8);
+  filter: drop-shadow(0 0 20px rgba(228, 77, 38, 0.5))
+    drop-shadow(0 0 30px rgba(228, 77, 38, 0.5));
+}
+
+.icon.css {
+  color: rgba(38, 77, 228, 0.8);
+  filter: drop-shadow(0 0 20px rgba(38, 77, 228, 0.5))
+    drop-shadow(0 0 30px rgba(38, 77, 228, 0.5));
+}
+
+.icon.react {
+  color: rgba(97, 218, 251, 0.8);
+  filter: drop-shadow(0 0 20px rgba(97, 218, 251, 0.5))
+    drop-shadow(0 0 30px rgba(97, 218, 251, 0.5));
+}
+
+.icon.vue {
+  color: rgba(66, 184, 131, 0.8);
+  filter: drop-shadow(0 0 20px rgba(66, 184, 131, 0.5))
+    drop-shadow(0 0 30px rgba(66, 184, 131, 0.5));
+}
+
+.icon.node {
+  color: rgba(140, 200, 75, 0.8);
+  filter: drop-shadow(0 0 20px rgba(140, 200, 75, 0.5))
+    drop-shadow(0 0 30px rgba(140, 200, 75, 0.5));
+}
+
+.icon.java {
+  color: rgba(248, 152, 32, 0.8);
+  filter: drop-shadow(0 0 20px rgba(248, 152, 32, 0.5))
+    drop-shadow(0 0 30px rgba(248, 152, 32, 0.5));
+}
+
+.icon.spring {
+  color: rgba(109, 179, 63, 0.8);
+  filter: drop-shadow(0 0 20px rgba(109, 179, 63, 0.5))
+    drop-shadow(0 0 30px rgba(109, 179, 63, 0.5));
+}
+
+.icon.docker {
+  color: rgba(36, 150, 237, 0.8);
+  filter: drop-shadow(0 0 20px rgba(36, 150, 237, 0.5))
+    drop-shadow(0 0 30px rgba(36, 150, 237, 0.5));
+}
+
+.icon.trpc {
+  color: rgba(77, 126, 242, 0.8);
+  filter: drop-shadow(0 0 20px rgba(77, 126, 242, 0.5))
+    drop-shadow(0 0 30px rgba(77, 126, 242, 0.5));
+}
+
+.icon.typeorm {
+  color: rgba(111, 125, 154, 0.8);
+  filter: drop-shadow(0 0 20px rgba(111, 125, 154, 0.5))
+    drop-shadow(0 0 30px rgba(111, 125, 154, 0.5));
+}
