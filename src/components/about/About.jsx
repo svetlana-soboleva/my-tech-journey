@@ -7,9 +7,9 @@ export const About = () => {
         Junior web developer currently 
         completing my training at <span className='salt'>SALT</span>, 
         with experience in both front-end and 
-        back-end development. I am seeking a 
+        {/* back-end development. I am seeking a 
         challenging position to apply my skills 
-        and continue growing professionally.
+        and continue growing professionally. */}
       </p>
       </div>
   )

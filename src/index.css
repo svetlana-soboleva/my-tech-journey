@@ -43,6 +43,7 @@
 
 .page2 {
   scroll-margin: 20px;
+  margin-top: 10px;
   height: 100vh;
   display: flex;
   flex-direction: column;
