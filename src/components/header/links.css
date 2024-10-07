@@ -1,0 +1,18 @@
+.links__block {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.links__block > * {
+  font-size: 30px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: none;
+}
+
+.links__block > *:hover {
+  transform: scale(1.2);
+  fill: #f89090;
+}

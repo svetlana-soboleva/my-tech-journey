@@ -7,9 +7,9 @@
 
 .header__block {
   width: 100%;
-  margin: 2rem;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -19,14 +19,13 @@ img {
   max-width: 200px;
 }
 
-
 .title {
   margin-top: 20px;
   animation: neon-blink 5s infinite alternate;
   color: #ff8888;
   font-size: 45px;
   font-weight: normal;
-  text-align: left;
+  text-align: center;
   text-shadow: var(--neon-effect);
   text-transform: uppercase;
   transform: skew(0, -12deg) rotateZ(5deg);
@@ -35,6 +34,8 @@ img {
 .title__block {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 @keyframes neon-blink {
@@ -62,10 +63,3 @@ img {
     opacity: 1;
   }
 }
-
-@media screen and (max-width: 425px) {
-    .header__block {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-  }
