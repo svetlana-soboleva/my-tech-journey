@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-  base: "/portfolio_SALT/",
+  base: "/my-tech-journey/",
 });
