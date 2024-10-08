@@ -7,6 +7,11 @@
   overflow-y: hidden;
   padding: 20px;
 }
+.applicationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 .page1 {
   height: 95vh;
@@ -33,7 +38,8 @@
     drop-shadow(0 0 20px #dea0a0);
 }
 
-.scrollDown:hover svg {
+.scrollDown:hover svg,
+.scrollUp:hover svg {
   fill: #ff8888;
   filter: drop-shadow(0 0 5px #ff8888) drop-shadow(0 0 10px #ff8888)
     drop-shadow(0 0 20px #ff8888);
@@ -68,5 +74,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 40px;
+}
+
+.page4 {
+  scroll-margin: 20px;
+  padding-top: 20px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   gap: 40px;
 }

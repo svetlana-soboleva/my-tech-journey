@@ -33,15 +33,15 @@ span {
 }
 
 .salt {
-  color: #ff8888;
+  color: #ff8888c6;
 }
 
 .turing {
-    color: rgba(118, 77, 242, 0.8);
+    color: rgba(118, 77, 242, 0.681);
 }
 
 .bsu {
-    color: rgba(38, 77, 228, 0.8);
+    color: rgba(38, 76, 228, 0.687);
 }
 
 .content p {
@@ -52,4 +52,8 @@ span {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.title__education {
+  text-align: center;
 }

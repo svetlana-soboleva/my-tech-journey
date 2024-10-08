@@ -6,12 +6,15 @@ import { FaChevronDown } from "react-icons/fa";
 import { Skills } from './components/skills/Skills';
 import { FaChevronUp } from "react-icons/fa";
 import { Education } from './components/myEducation/Education';
+import { Languages } from './components/header/Languages';
+import { WorkExperience } from './components/workExperience/WorkExperience';
 
 function App() {
 
   const page1Ref = useRef(null)
   const page2Ref = useRef(null)
   const page3Ref = useRef(null)
+  const page4Ref = useRef(null)
   
   const scrollToPage1 = () => {
     if (page1Ref.current) {
@@ -37,8 +40,20 @@ function App() {
     }
   }
 
+  const scrollToPage4 = () => {
+    if(page4Ref.current) {
+      page4Ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const scrollBackToPage3 = () => {
+    if (page3Ref.current) {
+      page3Ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
-    <>
+    <div className='applicationContent'> 
     <div className="page1" ref={page1Ref}>
     <Header/>
     <Links/>
@@ -61,8 +76,18 @@ function App() {
         <FaChevronUp/>
       </button>
       <Education/> 
+      <Languages/>
+      <button className="scrollDown" onClick={scrollToPage4}>
+    <FaChevronDown />
+    </button>
     </div>
-    </>
+    <div className="page4" ref={page4Ref}>
+      <button className='scrollUp' onClick={scrollBackToPage3}>
+        <FaChevronUp/>
+      </button>
+      <WorkExperience/>
+    </div>
+    </div>
   )
 }
 
