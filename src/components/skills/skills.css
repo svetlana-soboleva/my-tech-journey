@@ -127,3 +127,20 @@
   filter: drop-shadow(0 0 20px rgba(111, 125, 154, 0.5))
     drop-shadow(0 0 30px rgba(111, 125, 154, 0.5));
 }
+
+@media only screen and (min-width: 768px) {
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 4rem;
+    column-gap: 4rem;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .skills {
+    gap: 70px;
+  }
+}
