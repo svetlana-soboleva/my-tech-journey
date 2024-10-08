@@ -1,4 +1,5 @@
 import './header.css'
+import icon from '../../assets/icon1.png'
 
 export const Header = () => {
   return (
@@ -8,7 +9,7 @@ export const Header = () => {
         <h1 className='title'>Full-Stack Developer</h1>
     </div>
     <div className='image__block'>
-        <img src="../../public/—Pngtree—cute girl avatar element icon_4393286.png" alt="avatar" />
+        <img src={icon} alt="avatar"/>
     </div>
     </div>
   )
