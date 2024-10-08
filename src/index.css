@@ -5,6 +5,7 @@
   font-size: 1rem;
   letter-spacing: 2px;
   overflow-y: hidden;
+  padding: 20px;
 }
 
 .page1 {
@@ -49,6 +50,17 @@
 }
 
 .page2 {
+  scroll-margin: 20px;
+  padding-top: 20px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.page3 {
   scroll-margin: 20px;
   padding-top: 20px;
   height: 95vh;
