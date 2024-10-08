@@ -4,6 +4,7 @@
   background-color: #242424;
   font-size: larger;
   letter-spacing: 2px;
+  overflow-y: hidden;
 }
 
 .page1 {
@@ -15,12 +16,14 @@
   gap: 40px;
 }
 
-.scrollDown {
+.scrollDown,
+.scrollUp {
   animation: MoveUpDown 1.5s linear infinite;
   margin-bottom: 20px;
 }
 
-.scrollDown svg {
+.scrollDown svg,
+.scrollUp svg {
   filter: drop-shadow(0 0 5px #dfdbdb) drop-shadow(0 0 10px #e1dede)
     drop-shadow(0 0 20px #dea0a0);
 }
