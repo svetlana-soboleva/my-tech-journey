@@ -7,13 +7,17 @@
   margin-top: 40px;
 }
 
-.links__block > * {
+.link {
+  color: white;
+}
+
+.link {
   font-size: 30px;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
   text-shadow: none;
 }
 
-.links__block > *:hover {
+.link:hover {
   transform: scale(1.2);
-  fill: #f89090;
+  color: #f89090;
 }
