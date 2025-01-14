@@ -78,7 +78,7 @@ export const Project = () => {
           </p>
         </div>
 
-        {/* Navigation Buttons */}
+        
         <button className="carousel-button left" onClick={handlePrev}>
           &#10094;
         </button>

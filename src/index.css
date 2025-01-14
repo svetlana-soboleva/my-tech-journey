@@ -80,16 +80,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 40px;
+  gap: 20px;
 }
 
 .page5 {
   scroll-margin: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
   height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 40px;
+}
+
+
+
+@media (max-width: 429px) { 
+  .languages {
+    display: none;
+  }
+ .smallScreenExperience{
+  display: none;
+ }
+ .page3, .page4, .page5{
+  font-size: 0.9rem;
+ }
 }

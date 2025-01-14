@@ -128,3 +128,10 @@
   align-items: center;
   gap: 20px;
 }
+
+@media (max-width: 429px) { 
+
+ .carousel-image{
+  width: 150px;
+ }
+}
